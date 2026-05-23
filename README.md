@@ -62,14 +62,6 @@ The calibrated D90-conditioned functions are defined in:
 scripts/calibrated_v60_model.py
 ```
 
-The current closure functions are:
-
-```text
-retained-water capacity = 61.1115 * D90_um^-0.4828
-hydraulic correction    = 868951  * D90_um^-1.990
-diffusion-like rate     = 3.81942e-08 * D90_um^1.238
-surface-like rate       = 4.77428e-07 * D90_um^1.238
-```
 
 These are descriptive closures from the measured coarse, medium, and fine PSD anchors. They are not universal material laws.
 
