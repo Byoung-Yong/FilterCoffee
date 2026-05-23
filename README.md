@@ -1,10 +1,9 @@
-# Manuscript Reproduction Code
+# Reproduction Code
 
 This folder contains the code and public data used for the manuscript:
 
 `Mass-Conserving Simulation of Filter Coffee Extraction from Incomplete Recipe Descriptors`
 
-The repository version in this folder is intended for manuscript review and reproduction. It is separate from the interactive web-service code in `../webpage`.
 
 ## Scope
 
@@ -21,9 +20,6 @@ The code implements a mass-conserving porous-bed process simulator for filter co
 
 The public recipe data are not used for coefficient fitting. Reported public finish time is used only for comparison after simulation.
 
-## Not Included
-
-The first rebuilt core does not include caffeine, electrochemistry, wall bypass, bed deformation, temperature evolution, or filter-specific clogging. These are later modules.
 
 ## Installation
 
@@ -33,11 +29,6 @@ Use Python 3.10 or later.
 pip install -r requirements.txt
 ```
 
-## Main Data Files
-
-- `data/PSD.csv`: measured surface-area PSDs for fine, medium, and coarse grind states
-- `data/pour-over data.csv`: matched in-house calibration experiment
-- `data/public_data.csv`: public recipe records used for incomplete-input reconstruction
 
 ## Reproduce Main Manuscript Outputs
 
@@ -65,13 +56,6 @@ scripts/calibrated_v60_model.py
 
 These are descriptive closures from the measured coarse, medium, and fine PSD anchors. They are not universal material laws.
 
-## Tests
-
-```bash
-python -m unittest discover -s tests
-```
-
-The tests check that measured PSD inputs can be loaded, D90-conditioned parameters are finite, the calibrated medium reference simulation runs, mass balances close, cup water does not exceed input water, and inventories remain nonnegative.
 
 ## Interpretation
 
