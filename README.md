@@ -4,7 +4,8 @@ This folder contains the code and public data used for the manuscript:
 
 `Mass-Conserving Simulation of Filter Coffee Extraction from Incomplete Recipe Descriptors`
 
-The repository version in this folder is intended for manuscript review and reproduction. It is separate from the interactive web-service code in `../webpage`.
+The repository version in this folder is intended for manuscript review and reproduction. 
+It provides an interactive web-service at pourover-simulator.vercel.app .
 
 ## Scope
 
